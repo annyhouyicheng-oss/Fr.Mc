@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="45%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#302b63"/>
+      <stop offset="100%" stop-color="#0f0c29"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d67b"/>
+      <stop offset="50%" stop-color="#e8b84b"/>
+      <stop offset="100%" stop-color="#c9952a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff5b0" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#ffe98a" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffe98a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="256" cy="256" r="256" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="242" fill="none" stroke="#e8b84b" stroke-width="2" opacity="0.7"/>
+
+  <!-- Stars -->
+  <circle cx="100" cy="100" r="3" fill="#f5d67b" opacity="0.85"/>
+  <circle cx="145" cy="68" r="2" fill="#f5d67b" opacity="0.65"/>
+  <circle cx="375" cy="82" r="2.5" fill="#f5d67b" opacity="0.75"/>
+  <circle cx="428" cy="108" r="2" fill="#f5d67b" opacity="0.6"/>
+  <circle cx="72" cy="168" r="2" fill="#f5d67b" opacity="0.7"/>
+  <circle cx="455" cy="155" r="2.5" fill="#f5d67b" opacity="0.65"/>
+
+  <!-- Tower body -->
+  <polygon points="176,382 228,300 246,300 220,382" fill="url(#gold)"/>
+  <polygon points="336,382 284,300 266,300 292,382" fill="url(#gold)"/>
+  <rect x="213" y="294" width="86" height="11" rx="1" fill="url(#gold)"/>
+  <polygon points="213,305 228,285 256,280 284,285 299,305 285,305 256,292 227,305" fill="url(#gold)"/>
+  <polygon points="222,285 234,215 256,208 278,215 290,285" fill="url(#gold)"/>
+  <rect x="228" y="214" width="56" height="8" rx="1" fill="url(#gold)"/>
+  <polygon points="234,218 244,152 256,146 268,152 278,218" fill="url(#gold)"/>
+  <rect x="240" y="151" width="32" height="7" rx="1" fill="url(#gold)"/>
+  <polygon points="248,155 256,68 264,155" fill="#f5d67b"/>
+
+  <!-- Lattice -->
+  <line x1="220" y1="382" x2="240" y2="305" stroke="#0f0c29" stroke-width="3" opacity="0.45"/>
+  <line x1="240" y1="305" x2="228" y2="382" stroke="#0f0c29" stroke-width="3" opacity="0.45"/>
+  <line x1="292" y1="382" x2="272" y2="305" stroke="#0f0c29" stroke-width="3" opacity="0.45"/>
+  <line x1="272" y1="305" x2="284" y2="382" stroke="#0f0c29" stroke-width="3" opacity="0.45"/>
+
+  <!-- Ground arch -->
+  <path d="M 188 368 Q 256 322 324 368" fill="none" stroke="#e8b84b" stroke-width="4"/>
+
+  <!-- Fleur-de-lis -->
+  <g transform="translate(256,418)">
+    <ellipse cx="0" cy="-15" rx="6" ry="15" fill="url(#gold)"/>
+    <ellipse cx="-13" cy="-7" rx="5" ry="10" fill="url(#gold)"/>
+    <ellipse cx="13" cy="-7" rx="5" ry="10" fill="url(#gold)"/>
+    <rect x="-10" y="2" width="20" height="5" rx="2.5" fill="#c9952a"/>
+    <circle cx="0" cy="12" r="5" fill="url(#gold)"/>
+  </g>
+
+  <!-- Glow tip -->
+  <circle cx="256" cy="70" r="20" fill="url(#glow)"/>
+  <circle cx="256" cy="70" r="5" fill="#fffbd0"/>
+</svg>
