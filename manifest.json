@@ -1,0 +1,49 @@
+{
+  "name": "ICFSN 2026 法國・摩納哥旅遊",
+  "short_name": "ICFSN 2026",
+  "description": "ICFSN 2026 法國・摩納哥旅遊 App — 行程、景點、法語、日記、AI助手",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f0c29",
+  "theme_color": "#0f0c29",
+  "lang": "zh-TW",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["travel", "lifestyle"],
+  "shortcuts": [
+    {
+      "name": "今日行程",
+      "short_name": "行程",
+      "description": "查看今日行程",
+      "url": "./index.html#itinerary",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "AI 助手",
+      "short_name": "AI",
+      "description": "開啟 AI 旅遊助手",
+      "url": "./index.html#ai",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
