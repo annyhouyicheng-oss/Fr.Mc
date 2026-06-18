@@ -50,6 +50,7 @@
       "坎城":   { grad:["#2d0a0a","#5c1e1e"], accent:"#f87171", flag:"🇫🇷" },
       "摩納哥": { grad:["#4a0505","#8b0000"], accent:"#fbbf24", flag:"🇲🇨" },
       "艾茲":   { grad:["#1a2e1a","#2d4a2d"], accent:"#a3e635", flag:"🇫🇷" },
+      "芒通":   { grad:["#1a2a3a","#2d4a5e"], accent:"#60a5fa", flag:"🇫🇷" },
       "返台":   { grad:["#0a1a0a","#0d2a1a"], accent:"#4ade80", flag:"🇹🇼" },
     };
     const gt = c => CITY_THEME[c] || CITY_THEME["巴黎"];
@@ -204,6 +205,11 @@
         { name:"艾茲熱帶植物園",  emoji:"🌵", tip:"429公尺俯瞰蔚藍海岸，門票約€10-16（依官網）", map:"Le Jardin Exotique Eze", lat:43.7283, lng:7.3612, tag:"必去" },
         { name:"尼采小徑",        emoji:"🥾", tip:"健行俯瞰海岸線，路面崎嶇建議好走的鞋", map:"Chemin de Nietzsche", lat:43.7244, lng:7.3605, tag:"體驗" },
       ],
+      "芒通": [
+        { name:"芒通中央火車站", emoji:"🚉", tip:"備用版下車點，搭TER從尼斯約36分", map:"Gare de Menton", lat:43.7751, lng:7.4933, tag:"景點" },
+        { name:"聖米歇爾大教堂", emoji:"⛪", tip:"經典黃色巴洛克老城大門", map:"Basilique Saint-Michel Archange Menton", lat:43.7746, lng:7.5065, tag:"教堂" },
+        { name:"Sablettes 海灘", emoji:"🏖️", tip:"明信片取景點，捕捉彩色老城全景", map:"Plage des Sablettes Menton", lat:43.7767, lng:7.5097, tag:"必去" },
+      ],
     };
 
     // ═══════════════════════════════════════════════════════════════
@@ -235,6 +241,7 @@
       "7/09": { home:"51 Rue Honnorat Marseille 13003", homeMode:"walking", mode:"transit", stops:["Gare Routiere Saint-Charles Marseille","Nice Aeroport Terminal 2","2 Avenue des Fleurs Nice 06000","Cours Saleya Nice","Lou Pilha Leva 10 Rue du Collet Nice","Cathedrale Sainte-Reparate Nice","Confiserie Florian 14 Quai Papacino Nice","Place Garibaldi Nice","Promenade des Anglais Nice","Cours Saleya Nice","2 Avenue des Fleurs Nice 06000"] },
       "7/10": { home:"2 Avenue des Fleurs Nice 06000", homeMode:"walking", mode:"walking", stops:["Gare de Nice-Ville","Gare de Cannes","Palais des Festivals Cannes","5 Rue Venizelos Cannes","Le Suquet Cannes","Marche Forville Cannes","Plage de Cannes","Rue Antibes Cannes","2 Avenue des Fleurs Nice 06000"] },
       "7/11": { home:"2 Avenue des Fleurs Nice 06000", homeMode:"transit", mode:"walking", stops:["Musee Chagall Nice","Avenue Jean Medecin Nice","Cathedrale Notre-Dame de Nice","Vieux Nice","Place Massena Nice","Colline du Chateau Nice","Promenade des Anglais Nice","2 Avenue des Fleurs Nice 06000"] },
+      "7/11B": { home:"2 Avenue des Fleurs Nice 06000", homeMode:"walking", mode:"transit", stops:["Musee Chagall Nice","Avenue Jean Medecin Nice","Cathedrale Notre-Dame de Nice","Place Massena Nice","Vieux Nice","Parc de la Colline du Chateau Nice","Point de vue Colline du Chateau Nice","Gare de Nice-Ville","Gare de Menton","Basilique Saint-Michel Archange Menton","Plage des Sablettes Menton","2 Avenue des Fleurs Nice 06000"] },
       "7/12": { home:"2 Avenue des Fleurs Nice 06000", homeMode:"transit", mode:"walking", stops:["Port Hercule Monaco","Palais Princier Monaco","Cathedrale de Monaco","Mairie de Monaco","Marche de la Condamine Monaco","Port Hercule Monaco Bateau Bus","Fairmont Monte Carlo F1 Hairpin","Casino de Monte-Carlo Monaco","Monaco Tourism Office","Gare de Monaco-Monte-Carlo","2 Avenue des Fleurs Nice 06000"] },
       "7/12B": { home:"2 Avenue des Fleurs Nice 06000", homeMode:"transit", mode:"transit", stops:["Port Hercule Monaco","Palais Princier Monaco","Cathedrale de Monaco","Mairie de Monaco","Marche de la Condamine Monaco","Casino de Monte-Carlo Monaco","Monaco Tourism Office","Gare de Monaco-Monte-Carlo","Gare d'Eze SNCF","Eze Village","Chateau de la Chevre d'Or Eze","Jardin Exotique Eze","Eze Village","2 Avenue des Fleurs Nice 06000"] },
       "7/13": { home:"2 Avenue des Fleurs Nice 06000", homeMode:"transit", mode:"transit", stops:["Promenade des Anglais Nice","Nice Cote Azur Airport"] },
@@ -434,6 +441,31 @@
           {label:"🎨 夏卡爾博物館 €10｜週二休館"},
         ],
         tips:"城堡山丘免費電梯，開放至20:00，傍晚最美！\n建議從電梯上、步道下，可邊走邊俯瞰尼斯港與天使灣\n英國人大道夕陽：落日約 21:00（7月），18:00–19:00 光線最金黃" },
+
+      { date:"7/11B",day:"週六",emoji:"🚄",title:"尼斯深度＋芒通一日遊（備用版）",city:"尼斯",mapQuery:"Gare de Menton",
+        weather:"☀️ 尼斯・芒通 28°C｜傍晚芒通海邊浪漫",
+        highlights:["夏卡爾博物館","城堡山雙景點","TER跨城火車","芒通老城＋海灘"],
+        budget:[{item:"夏卡爾博物館",cost:"€10"},{item:"TER 尼斯↔芒通（SNCF App）",cost:"約€10-12/人"},{item:"電車/公車",cost:"約€1.70×2"},{item:"午餐",cost:"~€15"},{item:"晚餐",cost:"~€25"}],
+        schedule:[
+          {time:"09:00",icon:"🎨",content:"夏卡爾博物館（Musée National Marc Chagall）€10\n17幅聖經巨型油畫，沉浸式參觀"},
+          {time:"10:30",icon:"🛍️",content:"梅德森大道（Avenue Jean Médecin）尼斯購物主街"},
+          {time:"10:45",icon:"⛪",content:"尼斯聖母大教堂，亮眼新哥德式建築"},
+          {time:"11:00",icon:"📸",content:"馬賽納廣場＋太陽神噴泉，走進老城區"},
+          {time:"12:30",icon:"🍽️",content:"老城區午餐\nLou Pilha Leva薄餅，或廣場附近佛卡夏輕食",links:[{label:"Lou Pilha Leva",url:"https://www.google.com/maps/search/?api=1&query=Lou+Pilha+Leva+Nice"}]},
+          {time:"13:30",icon:"🏞️",content:"城堡山公園\n看人造大瀑布與古老遺跡"},
+          {time:"14:15",icon:"📷",content:"城堡山全景看台\n拍攝天使灣與英國人大道最經典弧線"},
+          {time:"14:45",icon:"🚆",content:"步行至尼斯中央火車站（Gare de Nice-Ville）"},
+          {time:"15:20",icon:"🚄",content:"TER火車前往芒通（Menton），車程約36分\n建議坐右手邊看海景"},
+          {time:"16:00",icon:"⛪",content:"抵達芒通，聖米歇爾大教堂\n經典黃色巴洛克老城大門"},
+          {time:"17:30",icon:"🏖️",content:"Sablettes 海灘\n明信片取景點，捕捉彩色老城全景"},
+          {time:"19:00",icon:"🍽️",content:"濱海晚餐\n邊看夜景邊吃南法料理",links:[{label:"Sablettes周邊餐廳",url:"https://www.google.com/maps/search/?api=1&query=restaurant+Plage+des+Sablettes+Menton"}]},
+          {time:"20:45",icon:"🚄",content:"芒通站搭TER返回尼斯\n抵達後步行／輕軌回住宿"},
+        ],
+        tickets:[
+          {label:"🎨 夏卡爾博物館 €10"},
+          {label:"🚄 TER 尼斯↔芒通 約€5-6/單程｜SNCF Connect App購票"},
+        ],
+        tips:"⚠️ 這是「體力足想跨城一日遊」的備用版本，比原本7/11更緊湊！\n芒通是法義邊境最美海濱小鎮，傍晚光線最適合拍照。\n若體力或時間不足，建議直接使用原本「7/11 尼斯深度」單一頁版本。" },
 
       { date:"7/12",day:"週日",emoji:"🎰",title:"摩納哥一日遊",city:"摩納哥",mapQuery:"Palais Princier Monaco",
         weather:"☀️ 摩納哥 28°C｜超跑滿街！",
@@ -979,6 +1011,7 @@
         { emoji:"🎬", name:"坎城市區", desc:"節慶宮 + Le Suquet + Forville + 海灘", url:"https://maps.google.com/maps?q=Cannes,France&z=14" },
         { emoji:"🎰", name:"摩納哥", desc:"親王宮 + 賭場 + Port Hercule + F1髮夾彎", url:"https://maps.google.com/maps?q=Monaco&z=14" },
         { emoji:"⛰️", name:"艾茲山城", desc:"備用版：黃金羊城堡 + 熱帶植物園 + 尼采小徑", url:"https://maps.google.com/maps?q=Eze,France&z=14" },
+        { emoji:"🚄", name:"芒通", desc:"備用版：聖米歇爾大教堂 + Sablettes海灘", url:"https://maps.google.com/maps?q=Menton,France&z=14" },
       ];
       return (
         <div style={{ padding:"0 16px 4px" }}>
@@ -1152,7 +1185,7 @@
                 )}
 
                 <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:7, marginBottom:12 }}>
-                  {[["🗼","巴黎"],["⛵","馬賽"],["💜","亞維儂"],["🌊","尼斯"],["🎬","坎城"],["🎰","摩納哥"],["⛰️","艾茲"]].map(([e,c]) => {
+                  {[["🗼","巴黎"],["⛵","馬賽"],["💜","亞維儂"],["🌊","尼斯"],["🎬","坎城"],["🎰","摩納哥"],["⛰️","艾茲"],["🚄","芒通"]].map(([e,c]) => {
                     const t=gt(c);
                     return (
                       <button key={c} onClick={() => { setSpotsCity(c); setTab("spots"); }} style={{ background:`${t.accent}10`, border:`1px solid ${t.accent}28`, borderRadius:12, padding:"9px 5px", textAlign:"center", cursor:"pointer" }}>
