@@ -2,8 +2,8 @@
 // ICFSN 2026 法國・摩納哥旅遊 — Service Worker
 // ═══════════════════════════════════════════════════════════════
 
-const CACHE_NAME = 'icfsn2026-v8';
-const RUNTIME_CACHE = 'icfsn2026-runtime-v8';
+const CACHE_NAME = 'icfsn2026-v12';
+const RUNTIME_CACHE = 'icfsn2026-runtime-v12';
 
 // 安裝時預先快取的核心資源
 const PRECACHE_URLS = [
