@@ -49,6 +49,7 @@
       "尼斯":   { grad:["#0d2840","#0a4d6e"], accent:"#22d3ee", flag:"🇫🇷" },
       "坎城":   { grad:["#2d0a0a","#5c1e1e"], accent:"#f87171", flag:"🇫🇷" },
       "摩納哥": { grad:["#4a0505","#8b0000"], accent:"#fbbf24", flag:"🇲🇨" },
+      "艾茲":   { grad:["#1a2e1a","#2d4a2d"], accent:"#a3e635", flag:"🇫🇷" },
       "返台":   { grad:["#0a1a0a","#0d2a1a"], accent:"#4ade80", flag:"🇹🇼" },
     };
     const gt = c => CITY_THEME[c] || CITY_THEME["巴黎"];
@@ -195,6 +196,14 @@
         { name:"Mitron Bakery", emoji:"🥖", tip:"Mauro Colagreco主廚開設麵包店，康達明市場內", map:"Mitron Bakery Monaco", lat:43.7342, lng:7.4197, tag:"美食" },
         { name:"Truffle Bistrot", emoji:"🍝", tip:"康達明市場美食街，義大利麵、排餐", map:"Truffle Bistrot Monaco", lat:43.7341, lng:7.4199, tag:"美食" },
       ],
+      "艾茲": [
+        { name:"艾茲火車站",      emoji:"🚆", tip:"備用版下車點，轉乘83路公車上山（⚠️班次常delay）", map:"Gare d'Eze SNCF", lat:43.7226, lng:7.3564, tag:"景點" },
+        { name:"艾茲山城入口",    emoji:"⛰️", tip:"83/82路公車站，山頂老城步行起點", map:"Eze Village", lat:43.7298, lng:7.3619, tag:"地標" },
+        { name:"黃金羊城堡傳奇飯店",emoji:"🏰",tip:"全球知名景觀餐廳飯店，外觀／景觀台必拍", map:"Château de la Chèvre d'Or Eze", lat:43.7273, lng:7.3619, tag:"景點" },
+        { name:"艾茲聖母升天教堂",emoji:"⛪", tip:"18世紀巴洛克式教堂，免費入內", map:"Église Notre-Dame-de-l'Assomption Eze", lat:43.7286, lng:7.3616, tag:"教堂" },
+        { name:"艾茲熱帶植物園",  emoji:"🌵", tip:"429公尺俯瞰蔚藍海岸，門票約€10-16（依官網）", map:"Le Jardin Exotique Eze", lat:43.7283, lng:7.3612, tag:"必去" },
+        { name:"尼采小徑",        emoji:"🥾", tip:"健行俯瞰海岸線，路面崎嶇建議好走的鞋", map:"Chemin de Nietzsche", lat:43.7244, lng:7.3605, tag:"體驗" },
+      ],
     };
 
     // ═══════════════════════════════════════════════════════════════
@@ -227,6 +236,7 @@
       "7/10": { home:"2 Avenue des Fleurs Nice 06000", homeMode:"walking", mode:"walking", stops:["Gare de Nice-Ville","Gare de Cannes","Palais des Festivals Cannes","5 Rue Venizelos Cannes","Le Suquet Cannes","Marche Forville Cannes","Plage de Cannes","Rue Antibes Cannes","2 Avenue des Fleurs Nice 06000"] },
       "7/11": { home:"2 Avenue des Fleurs Nice 06000", homeMode:"transit", mode:"walking", stops:["Musee Chagall Nice","Avenue Jean Medecin Nice","Cathedrale Notre-Dame de Nice","Vieux Nice","Place Massena Nice","Colline du Chateau Nice","Promenade des Anglais Nice","2 Avenue des Fleurs Nice 06000"] },
       "7/12": { home:"2 Avenue des Fleurs Nice 06000", homeMode:"transit", mode:"walking", stops:["Port Hercule Monaco","Palais Princier Monaco","Cathedrale de Monaco","Mairie de Monaco","Marche de la Condamine Monaco","Port Hercule Monaco Bateau Bus","Fairmont Monte Carlo F1 Hairpin","Casino de Monte-Carlo Monaco","Monaco Tourism Office","Gare de Monaco-Monte-Carlo","2 Avenue des Fleurs Nice 06000"] },
+      "7/12B": { home:"2 Avenue des Fleurs Nice 06000", homeMode:"transit", mode:"transit", stops:["Port Hercule Monaco","Palais Princier Monaco","Cathedrale de Monaco","Mairie de Monaco","Marche de la Condamine Monaco","Casino de Monte-Carlo Monaco","Monaco Tourism Office","Gare de Monaco-Monte-Carlo","Gare d'Eze SNCF","Eze Village","Chateau de la Chevre d'Or Eze","Jardin Exotique Eze","Eze Village","2 Avenue des Fleurs Nice 06000"] },
       "7/13": { home:"2 Avenue des Fleurs Nice 06000", homeMode:"transit", mode:"transit", stops:["Promenade des Anglais Nice","Nice Cote Azur Airport"] },
     };
 
@@ -454,6 +464,44 @@
           {label:"🏰 親王宮（可選）€10"},
         ],
         tips:"進賭場需穿正式服裝！\n⭐ 太陽能接駁船是當地人最推玩法，從海面看摩納哥超震撼！\n下船直走F1髮夾彎→搭電梯上賭場，動線完美！\n摩納哥護照免費領，是最棒紀念品！" },
+
+      { date:"7/12B",day:"週日",emoji:"⛰️",title:"摩納哥＋艾茲（備用·體力足走兩地）",city:"摩納哥",mapQuery:"Eze Village",
+        weather:"☀️ 摩納哥・艾茲 28°C｜山城階梯多，建議好走的鞋",
+        highlights:["親王宮","⭐衛兵交接11:55","蒙地卡羅賭場","艾茲山城","熱帶植物園"],
+        budget:[{item:"電車/公車多段（Lignes d'Azur App）",cost:"約€1.70×2-3/人"},{item:"TER 尼斯↔摩納哥↔艾茲（SNCF App）",cost:"約€16-18/人"},{item:"艾茲熱帶植物園門票",cost:"約€10-16（依官網）"},{item:"親王宮（選）",cost:"€10"},{item:"午餐",cost:"~€20"}],
+        schedule:[
+          {time:"07:30",icon:"🏃",content:"提早出發！這天行程較滿\nSNCF Connect App 先買好TER票"},
+          {time:"07:45",icon:"🚃",content:"步行至尼斯城站（Gare de Nice-Ville）"},
+          {time:"08:10",icon:"🚌",content:"TER 尼斯→摩納哥（約20-25分，~€5）"},
+          {time:"08:35",icon:"⚓",content:"抵達摩納哥 Port Hercule，晨光最美時段"},
+          {time:"09:00",icon:"🏰",content:"步道登親王宮山丘（15-20分）"},
+          {time:"10:00",icon:"⛪",content:"摩納哥主教堂＋摩納哥市政廳\n早一點看，避開11:55前的人潮"},
+          {time:"10:45",icon:"🍽️",content:"康達明市場稍作補給（咖啡／可頌）"},
+          {time:"11:00",icon:"🏛️",content:"回到親王宮廣場提前占位"},
+          {time:"11:55",icon:"⭐",content:"⭐ 摩納哥親王宮衛兵交接儀式\n格里馬爾迪家族，建於1215年"},
+          {time:"12:15",icon:"📒",content:"摩納哥遊客中心\n免費領取紅色「摩納哥護照」蓋章！"},
+          {time:"12:35",icon:"🎰",content:"蒙地卡羅賭場廣場快拍\n（為節省時間，此版本省略太陽能接駁船Bateau Bus）"},
+          {time:"13:00",icon:"🍽️",content:"午餐：康達明市場或Monte Carlo周邊\n建議30-40分鐘內解決，趕TER班次",links:[{label:"康達明市場",url:"https://www.google.com/maps/search/?api=1&query=Marche+de+la+Condamine+Monaco"}]},
+          {time:"13:45",icon:"🚆",content:"步行至摩納哥火車站，搭TER往艾茲"},
+          {time:"14:00",icon:"🚆",content:"TER 摩納哥→艾茲（約10-15分，~€3-4）"},
+          {time:"14:15",icon:"🚌",content:"抵達艾茲火車站，轉乘83路公車上山\n⚠️ 班次不準時，常延誤30-60分鐘，請耐心等候並預留緩衝"},
+          {time:"14:45",icon:"⛰️",content:"抵達艾茲山城入口，開始步行老城（鵝卵石路+階梯，建議好走的鞋）"},
+          {time:"15:00",icon:"🏰",content:"黃金羊城堡（Château de la Chèvre d'Or）外觀／景觀台"},
+          {time:"15:20",icon:"⛪",content:"艾茲聖母升天教堂\n18世紀巴洛克風格，免費入內"},
+          {time:"15:40",icon:"🌵",content:"艾茲山頂熱帶植物園\n429公尺俯瞰整片蔚藍海岸，門票約€10-16（依官網公告）"},
+          {time:"16:30",icon:"🥾",content:"尼采小徑入口\n若體力足可健行俯瞰海岸，否則拍照留念即可"},
+          {time:"16:45",icon:"🚌",content:"艾茲山城回程巴士站，搭82路直達尼斯（無需經摩納哥）"},
+          {time:"17:30",icon:"🏠",content:"抵達尼斯 Boyer 站，步行／輕軌返回住宿\n⚠️ 明日11:00前退房！"},
+        ],
+        tickets:[
+          {label:"🚂 TER 尼斯↔摩納哥 每段~€5｜SNCF Connect App購票"},
+          {label:"🚂 TER 摩納哥↔艾茲 每段~€3-4｜SNCF Connect App購票"},
+          {label:"🚌 83路公車 艾茲火車站→山城 約€1.70｜班次不固定，常delay"},
+          {label:"🚌 82路公車 艾茲→尼斯 直達 約€1.70｜Lignes d'Azur App"},
+          {label:"🌵 艾茲熱帶植物園門票 約€10-16（依官網）"},
+          {label:"🏰 親王宮（可選）€10"},
+        ],
+        tips:"⚠️ 這是「體力足才走兩地」的備用版本，行程比原版緊湊很多！\n艾茲83路公車常delay達30-60分鐘，務必預留緩衝時間。\n若覺得累或時間不夠，建議直接切回原本的「摩納哥一日遊」單一頁版本，玩得更從容！\n穿好走的鞋，艾茲山城階梯多。" },
 
       { date:"7/13",day:"週一",emoji:"🛫",title:"啟程回台",city:"返台",mapQuery:"Nice Côte d'Azur Airport",
         weather:"☀️ 尼斯 28°C｜最後一天！",
@@ -759,9 +807,9 @@
     // ═══════════════════════════════════════════════════════════════
     const TAG_COLORS = { "地標":"#a78bfa","博物館":"#38bdf8","美食":"#f87171","市集":"#fbbf24","景點":"#22d3ee","建築":"#c084fc","教堂":"#86efac","體驗":"#fb923c","歷史":"#e2e8f0","活動":"#f472b6","購物":"#60a5fa","海灘":"#a3e635","必去":"#ff6b6b" };
 
-    function CitySpots() {
+    function CitySpots({ initialCity }) {
       const cities = Object.keys(CITY_SPOTS);
-      const [selCity, setSelCity] = useState("巴黎");
+      const [selCity, setSelCity] = useState(initialCity || "巴黎");
       const [selTag, setSelTag] = useState("全部");
 
       const spots = CITY_SPOTS[selCity];
@@ -773,7 +821,7 @@
         <div style={{ padding:"16px" }}>
           <div style={{ fontSize:18, fontWeight:800, marginBottom:4, paddingTop:4 }}>📍 景點地圖集</div>
           <div style={{ fontSize:12, color:"#64748b", marginBottom:12 }}>點擊「地圖」按鈕一鍵導航</div>
-          <div style={{ display:"flex", gap:6, overflowX:"auto", paddingBottom:6, marginBottom:12, scrollbarWidth:"none" }}>
+          <div style={{ display:"flex", gap:6, flexWrap:"wrap", marginBottom:12 }}>
             {cities.map(c => {
               const ct = gt(c);
               return (
@@ -930,6 +978,7 @@
         { emoji:"🌊", name:"尼斯市區", desc:"含 2 Ave des Fleurs 住宿 + Cours Saleya", url:"https://maps.google.com/maps?q=Nice,France&z=14" },
         { emoji:"🎬", name:"坎城市區", desc:"節慶宮 + Le Suquet + Forville + 海灘", url:"https://maps.google.com/maps?q=Cannes,France&z=14" },
         { emoji:"🎰", name:"摩納哥", desc:"親王宮 + 賭場 + Port Hercule + F1髮夾彎", url:"https://maps.google.com/maps?q=Monaco&z=14" },
+        { emoji:"⛰️", name:"艾茲山城", desc:"備用版：黃金羊城堡 + 熱帶植物園 + 尼采小徑", url:"https://maps.google.com/maps?q=Eze,France&z=14" },
       ];
       return (
         <div style={{ padding:"0 16px 4px" }}>
@@ -976,6 +1025,7 @@
     // ═══════════════════════════════════════════════════════════════
     function App() {
       const [tab, setTab] = useState("home");
+      const [spotsCity, setSpotsCity] = useState("巴黎");
       const [selDay, setSelDay] = useState(null);
       const [checked, setChecked] = useState(() => {
         try { const s = localStorage.getItem("icfsn_checklist"); return s ? JSON.parse(s) : {}; } catch(e) { return {}; }
@@ -1102,10 +1152,10 @@
                 )}
 
                 <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:7, marginBottom:12 }}>
-                  {[["🗼","巴黎"],["⛵","馬賽"],["💜","亞維儂"],["🌊","尼斯"],["🎬","坎城"],["🎰","摩納哥"]].map(([e,c]) => {
+                  {[["🗼","巴黎"],["⛵","馬賽"],["💜","亞維儂"],["🌊","尼斯"],["🎬","坎城"],["🎰","摩納哥"],["⛰️","艾茲"]].map(([e,c]) => {
                     const t=gt(c);
                     return (
-                      <button key={c} onClick={() => setTab("spots")} style={{ background:`${t.accent}10`, border:`1px solid ${t.accent}28`, borderRadius:12, padding:"9px 5px", textAlign:"center", cursor:"pointer" }}>
+                      <button key={c} onClick={() => { setSpotsCity(c); setTab("spots"); }} style={{ background:`${t.accent}10`, border:`1px solid ${t.accent}28`, borderRadius:12, padding:"9px 5px", textAlign:"center", cursor:"pointer" }}>
                         <div style={{ fontSize:17, marginBottom:2 }}>{e}</div>
                         <div style={{ fontSize:11, color:t.accent, fontWeight:700 }}>{c}</div>
                       </button>
@@ -1294,7 +1344,7 @@
             );
           })()}
 
-          {tab==="spots" && <CitySpots />}
+          {tab==="spots" && <CitySpots initialCity={spotsCity} />}
           {tab==="phrase" && <Phrasebook />}
           {tab==="diary" && <TravelDiary />}
 
