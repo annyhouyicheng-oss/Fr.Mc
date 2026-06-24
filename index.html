@@ -1118,7 +1118,7 @@
       ];
 
       return (
-        <div style={{ minHeight:"100vh", background:"linear-gradient(160deg,#0f0c29 0%,#1a1040 40%,#081828 100%)", fontFamily:"'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif", color:"#f0f0f0", maxWidth:480, margin:"0 auto", paddingBottom:76 }}>
+        <div style={{ minHeight:"100vh", background:"linear-gradient(160deg,#0f0c29 0%,#1a1040 40%,#081828 100%)", fontFamily:"'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif", color:"#f0f0f0", width:"100%", paddingBottom:76 }}>
 
           {/* ══════ HOME ══════ */}
           {tab==="home" && (
@@ -1458,7 +1458,7 @@
           )}
 
           {/* ══════ BOTTOM NAV ══════ */}
-          <div style={{ position:"fixed", bottom:0, left:"50%", transform:"translateX(-50%)", width:"100%", maxWidth:480, WebkitBackdropFilter:"blur(20px)", background:"rgba(7,5,18,0.97)", backdropFilter:"blur(20px)", borderTop:"1px solid rgba(255,255,255,0.07)", display:"flex" }}>
+          <div style={{ position:"fixed", bottom:0, left:0, width:"100%", WebkitBackdropFilter:"blur(20px)", background:"rgba(7,5,18,0.97)", backdropFilter:"blur(20px)", borderTop:"1px solid rgba(255,255,255,0.07)", display:"flex" }}>
             {TABS.map(t=>(
               <button key={t.id} onClick={() => { setTab(t.id); if(t.id!=="itinerary") setSelDay(null); }}
                 style={{ flex:1, padding:"9px 2px 7px", background:"none", border:"none", borderTop:tab===t.id?"2px solid #a78bfa":"2px solid transparent", color:tab===t.id?"#a78bfa":"#475569", cursor:"pointer", display:"flex", flexDirection:"column", alignItems:"center", gap:1, fontSize:"8.5px" }}>
